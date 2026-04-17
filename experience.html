@@ -1,119 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Harishan's Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Experience | Harishan Thilakanathan</title>
+  <meta
+    name="description"
+    content="Professional experience of Harishan Thilakanathan, including co-op and web development roles."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="icon" type="image/png" href="/favicon_io copy/favicon-32x32.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="experience.css" />
+  <link rel="icon" type="image/png" href="/favicon_io copy/favicon-32x32.png" />
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<div id="particles-js"></div>
+  <header>
+    <nav class="nav-pill" aria-label="Main navigation">
+      <span class="nav-brand">@harishan</span>
+      <div class="nav-divider"></div>
 
-<!-- MOBILE MENU -->
-<header>
-    <div class="mobile-menu-wrapper">
-        <div class="menu-header">
-            <div class="username">@experience</div>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html" class="active" aria-current="page">Experience</a>
+      </div>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+        onclick="toggleMobile()"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="mobile-dropdown" id="mobileMenu">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="aboutme.html"><i class="fa-solid fa-user"></i> About</a>
+        <a href="projects.html"><i class="fa-solid fa-code"></i> Projects</a>
+        <a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page" id="main-content">
+    <section class="page-header">
+      <p class="eyebrow">Experience</p>
+      <h1 class="page-title">Where I’ve worked</h1>
+      <p class="page-subtitle">
+        Co-op and industry experience across data analysis, software, and web development.
+      </p>
+    </section>
+
+    <section class="timeline" aria-label="Work experience timeline">
+      <article class="experience-card">
+        <div class="timeline-dot" aria-hidden="true"></div>
+
+        <div class="exp-top">
+          <h2 class="exp-role">Research &amp; Data Analyst</h2>
+          <span class="exp-date">Sep - Dec 2025</span>
         </div>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="index.html" class="navIcon">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </a>
+        <p class="exp-company">
+          <strong>Ontario Ministry of Energy and Mines</strong>
+          <span class="exp-sep">-</span>
+          Broadband Expansion &amp; Connectivity Branch
+        </p>
 
-            <a href="aboutme.html">
-                <i class="fa-solid fa-file"></i>
-                <span>About Me</span>
-            </a>
-
-            <a href="projects.html">
-                <i class="fa-solid fa-file"></i>
-                <span>Projects</span>
-            </a>
-
-            <a href="experience.html">
-                <i class="fa-solid fa-file"></i>
-                <span>Experience</span>
-            </a>
-
-           
-           
-        </div>
-    </div>
-
-    <!-- TOP HEADER (Desktop Navigation) -->
-    <div class="header">
-        <div id="top-header">
-            <nav class="navbar">
-                <div class="logo"></div>
-                <ul class="nav-menu">
-                    <li><a href="#section0">About Me</a></li>
-                    <li><a href="#section12">Projects</a></li>
-                    <li><a href="#Third">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<script>
-function toggleMenu() {
-    const menu = document.querySelector('.nav-menu');
-    menu.classList.toggle('show');
-}
-
-function closeMenu() {
-    document.querySelector('.nav-menu').classList.remove('show');
-}
-
-document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', closeMenu);
-});
-</script>
-
-
-<div class="page">
-    <!--<h1>Experience</h1>-->
-
-    <div class="experience-cards">
-
-        <div class="experience-card">
-            <div class="exp-header">
-                <span class="exp-role">Research & Data Analyst</span>
-                <span class="exp-date">Sep – Dec 2025</span>
-            </div>
-            <div class="exp-company"><strong>Ontario Ministry of Energy and Mines</strong> — Broadband Expansion & Connectivity Branch</div>
-            <span class="exp-type">Co-op</span>
-            <br>
-            <a href="https://harit10.github.io/Work-Term-Report-2/" target="_blank" class="journey-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Blog
-            </a>
-            <img src="Images/ont.jpg" alt="Ontario Ministry Logo" class="company-logo" onerror="this.style.display='none'">
+        <div class="exp-meta">
+          <span class="exp-type">Co-op</span>
+          <a
+            href="https://harit10.github.io/Work-Term-Report-2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="journey-btn"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Blog
+          </a>
         </div>
 
-        <div class="experience-card">
-            <div class="exp-header">
-                <span class="exp-role">Web Developer</span>
-                <span class="exp-date">May - Aug 2025</span>
-            </div>
-            <div class="exp-company"><strong>SACHAYS</strong></div>
-            <span class="exp-type">Summer</span>
+        <ul class="exp-points">
+          <li>Analyzed Ontario-wide broadband infrastructure data using ArcGIS Pro, SQL, and Python to support planning decisions.</li>
+          <li>Built SQL and Python workflows to classify 50/10 eligibility and automate validation checks.</li>
+          <li>Produced reporting outputs that helped identify municipalities for infrastructure planning.</li>
+        </ul>
+
+        <img
+          src="Images/ont.jpg"
+          alt="Ontario Ministry logo"
+          class="company-logo"
+          onerror="this.style.display='none'"
+          loading="lazy"
+          decoding="async"
+        />
+      </article>
+
+      <article class="experience-card">
+        <div class="timeline-dot" aria-hidden="true"></div>
+
+        <div class="exp-top">
+          <h2 class="exp-role">Web Developer</h2>
+          <span class="exp-date">May - Aug 2025</span>
         </div>
 
-    </div>
+        <p class="exp-company"><strong>SACHAYS</strong></p>
 
-    
-</div>
+        <div class="exp-meta">
+          <span class="exp-type">Summer</span>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="journey-btn"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Blog
+          </a>
+        </div>
+
+        <ul class="exp-points">
+          <li>Redesigned and rebuilt key parts of the SACHAYS WordPress site for better UX and performance.</li>
+          <li>Added custom HTML/CSS/JS features with full responsive support across devices.</li>
+          <li>Created 7+ pages and content updates to showcase events and community impact.</li>
+        </ul>
+
+        <img
+          src="Images/sachayslogo.png"
+          alt="Ontario Ministry logo"
+          class="company-logo"
+          onerror="this.style.display='none'"
+          loading="lazy"
+          decoding="async"
+        />
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navButton = document.querySelector(".hamburger");
+
+    function toggleMobile() {
+      const isOpen = mobileMenu.classList.toggle("open");
+      navButton.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".nav-pill") && mobileMenu.classList.contains("open")) {
+        mobileMenu.classList.remove("open");
+        navButton.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && mobileMenu.classList.contains("open")) {
+        mobileMenu.classList.remove("open");
+        navButton.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
+</body>
+</html>

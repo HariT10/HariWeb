@@ -1,84 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About — Harishan's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8" />
+  <title>About | Harishan Thilakanathan</title>
+  <meta
+    name="description"
+    content="Learn more about Harishan Thilakanathan, Software Engineering student at the University of Guelph."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="/favicon_io copy/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="icon" type="image/png" href="/favicon_io copy/favicon-32x32.png" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<!-- NAV -->
-<header>
-    <div class="mobile-menu-wrapper">
-        <div class="menu-header">
-            <div class="username">@aboutMe</div>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <header>
+    <nav class="nav-pill" aria-label="Main navigation">
+      <span class="nav-brand">@harishan</span>
+      <div class="nav-divider"></div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html" class="active" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+      </div>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+        onclick="toggleMobile()"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="mobile-dropdown" id="mobileMenu">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="aboutme.html"><i class="fa-solid fa-user"></i> About</a>
+        <a href="projects.html"><i class="fa-solid fa-code"></i> Projects</a>
+        <a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page" id="main-content">
+    <section class="page-header">
+      <p class="eyebrow">About</p>
+      <h1 class="page-title">About me</h1>
+      <p class="page-subtitle">
+        Software engineering student, data-focused builder, and a learner.
+      </p>
+    </section>
+
+    <section class="about-layout">
+      <section class="bio">
+        <h2 class="section-heading">My story</h2>
+        <p>
+          Hi, I built this website to document my journey through projects, co-ops,
+          and everything in between. My interests include software development, data
+           engineering, and spatial analysis (GIS).
+        </p>
+        <p>
+          I’ve worked as a Research and Data Analyst and as a Web Developer. I’m interested
+          in building software and data tools that support better decision-making and solve
+          real-world problems.
+        </p>
+        <p>
+          Outside of software, I play soccer, shoot hoops, go for runs, and edit videos.
+        </p>
+      </section>
+
+      <section class="education">
+        <h2 class="section-heading">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p class="timeline-date">2023 - Present</p>
+            <h3 class="timeline-title">University of Guelph</h3>
+            <p class="timeline-sub">Bachelor of Computing, Software Engineering</p>
+            <p class="timeline-sub">Minor in Applied Geomatics</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p class="timeline-date">2019 - 2023</p>
+            <h3 class="timeline-title">Milliken Mills High School</h3>
+            <p class="timeline-sub">Ontario Secondary School Diploma</p>
+          </div>
         </div>
-        <div class="nav-menu" id="navMenu">
-            <a href="index.html" class="navIcon">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </a>
-            <a href="aboutme.html">
-                <i class="fa-solid fa-file"></i>
-                <span>About Me</span>
-            </a>
-            <a href="projects.html">
-                <i class="fa-solid fa-file"></i>
-                <span>Projects</span>
-            </a>
-            <a href="experience.html">
-                <i class="fa-solid fa-file"></i>
-                <span>Experience</span>
-            </a>
-        </div>
-    </div>
-</header>
+      </section>
 
-<div class="page">
+      <section class="skills-card">
+        <h2 class="section-heading">Skills</h2>
 
-   
-
-    <div class="bio">
-        <p>Hi, I built this website to document my journey through projects, co-ops, and everything in between. My field of interests include software development, data analytics, and GIS. I have experience working as a Research and Data Analyst and a Web Developer. I’m interested in working with software and data to support decision-making and in building software that helps solve real-world problems.</p>
-        <p>Outside of code I play soccer, shoot hoops, go for runs, and edit videos.</p>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="section-label">Education</div>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <div class="timeline-date">2023 – Present</div>
-            <div class="timeline-title">University of Guelph</div>
-            <div class="timeline-sub">Bachelor of Computing, Software Engineering</div>
-            <div class="timeline-sub">Minor in Applied Geomatics</div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-date">2019 – 2023</div>
-            <div class="timeline-title">Milliken Mills High School</div>
-            <div class="timeline-sub">Ontario Secondary School Diploma</div>
-        </div>
-
-    </div>
-
-    <div class="section-divider"></div>
-
-    <!-- SKILLS -->
-    <div class="section-label">Skills</div>
-
-    <div class="skills-group">
-        <div class="skills-group-label">Languages</div>
-        <div class="skills-container">
+        <div class="skills-group">
+          <p class="skills-group-label">Languages</p>
+          <div class="skills-container">
             <span class="skill">Python</span>
             <span class="skill">C</span>
             <span class="skill">JavaScript</span>
@@ -86,43 +117,58 @@
             <span class="skill">React</span>
             <span class="skill">HTML</span>
             <span class="skill">CSS</span>
+          </div>
         </div>
-    </div>
 
-    <div class="skills-group">
-        <div class="skills-group-label">Tools & Technologies</div>
-        <div class="skills-container">
+        <div class="skills-divider"></div>
+
+        <div class="skills-group">
+          <p class="skills-group-label">Tools &amp; Technologies</p>
+          <div class="skills-container">
             <span class="skill">Git</span>
             <span class="skill">SQL</span>
             <span class="skill">MongoDB</span>
             <span class="skill">Docker</span>
             <span class="skill">WordPress</span>
             <span class="skill">ArcGIS</span>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="section-divider"></div>
+      <section class="interests-wrap">
+        <h2 class="section-heading">Interests</h2>
+        <div class="interests">
+          <div class="interest-card"><span class="interest-icon"></span><span>Soccer</span></div>
+          <div class="interest-card"><span class="interest-icon"></span><span>Basketball</span></div>
+          <div class="interest-card"><span class="interest-icon"></span><span>Running</span></div>
+          <div class="interest-card"><span class="interest-icon"></span><span>Video Editing</span></div>
+        </div>
+      </section>
+    </section>
+  </main>
 
-    <!-- INTERESTS -->
-    <div class="section-label">Interests</div>
+  <script>
+    const menu = document.getElementById("mobileMenu");
+    const navButton = document.querySelector(".hamburger");
 
-    <div class="interests">
-        <div class="interest-item"><span class="interest-icon">⚽</span> Soccer</div>
-        <div class="interest-item"><span class="interest-icon">🏀</span> Basketball</div>
-        <div class="interest-item"><span class="interest-icon">🏃</span> Running</div>
-        <div class="interest-item"><span class="interest-icon">🎬</span> Video Editing</div>
-    </div>
+    function toggleMobile() {
+      const isOpen = menu.classList.toggle("open");
+      navButton.setAttribute("aria-expanded", String(isOpen));
+    }
 
-</div>
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".nav-pill") && menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        navButton.setAttribute("aria-expanded", "false");
+      }
+    });
 
-<script>
-function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('show');
-}
-document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => document.getElementById('navMenu').classList.remove('show'));
-});
-</script>
-
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        navButton.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
 </body>
 </html>
